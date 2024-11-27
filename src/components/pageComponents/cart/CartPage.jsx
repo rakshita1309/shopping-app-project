@@ -90,10 +90,10 @@ function CartPage() {
       style={{
         display: 'flex',
         flexWrap: 'wrap',
-        gap: '32px',
+        gap: '48px',
         padding: '16px',
         flex: 1,
-        justifyContent: 'space-between',
+        justifyContent: 'center',
       }}
     >
       <div

@@ -36,7 +36,7 @@ function ItemPage(props) {
         width: '100%',
         flexDirection: 'column',
         gap: '8px',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
       }}
     >
       <div style={{
@@ -45,17 +45,18 @@ function ItemPage(props) {
         gap: '50px',
         flexWrap: 'wrap',
         padding: '50px',
+        justifyContent: 'center',
       }}
       >
         <div style={{
           display: 'flex',
           flex: 1,
-          width: '60%',
           flexWrap: 'wrap',
           gap: '16px',
-          minWidth: '430px',
+          minWidth: '300px',
           overflow: 'auto',
           maxHeight: '100%',
+          justifyContent: 'center',
         }}
         >
           {
@@ -75,11 +76,9 @@ function ItemPage(props) {
         </div>
         <div
           style={{
-            width: '40%',
             display: 'flex',
             flexDirection: 'column',
             gap: '24px',
-            alignItems: 'flex-start'
           }}
         >
           <div style={{ fontSize: '28px' }}>

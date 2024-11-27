@@ -32,6 +32,7 @@ function WishListItems(props) {
 
   return (
     <div
+    className='wishlistItem'
       style={{
         display: 'flex',
         gap: '32px',
@@ -41,6 +42,7 @@ function WishListItems(props) {
         borderRadius: '24px',
         maxWidth: '600px',
         boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+        flexwrap: 'wrap',
       }}
     >
       <button
@@ -74,7 +76,7 @@ function WishListItems(props) {
           style={{
             display: 'flex',
             gap: '16px',
-            flexDirection: 'column',
+            flex: '1',
           }}
         >
           <Carousel images={pictures} buttonEnabled={true} />
@@ -84,7 +86,9 @@ function WishListItems(props) {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          flex: '1',
+          alignItems: 'center',
         }}
       >
         <div
@@ -118,17 +122,21 @@ function WishListItems(props) {
             style={{
               border: '1px solid black',
               padding: '8px',
-              borderRadius: '16px'
+              borderRadius: '16px',
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '16px',
+              width: '200px',
             }}
           >
             <div
               style={{
                 display: 'flex',
-                gap: '16px',
+                gap: '8px',
               }}
             >
               {cartLoading ? <Loader /> : <FaShoppingCart fontSize={24} />}
-              <span>Move to cart</span>
+              <span> Move to cart</span>
             </div>
           </button>
         </div>

@@ -59,7 +59,11 @@ function WishListPage() {
         padding: '16px',
         gap: '16px',
         maxHeight: '800px',
-        overflow: 'auto'
+        display: 'flex',
+        gap: '24px',
+        flexwrap: 'wrap',
+        flexDirection: 'column',
+        justifyContent: 'center',
       }}
     >
       {
